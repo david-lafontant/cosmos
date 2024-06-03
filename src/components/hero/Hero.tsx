@@ -12,7 +12,9 @@ type Data = {
 const Hero = ({ data }: Data) => {
   return (
     <section className="hero">
-      <img src={data.image} alt={data.name} />
+      <div className="container">
+        <img src={data.image} alt={data.name} id="photo" />
+      </div>
     </section>
   )
 }
