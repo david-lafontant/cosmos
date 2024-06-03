@@ -7,14 +7,14 @@ type CardData = {
 }
 
 const arr: CardData[] = [];
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < 4; i++) {
   if (i % 2 === 0) {
-    arr.push({ image: dummy1, name: "Nisi nostrud officia minim" });
-    arr.push({ image: dummy2, name: "id et eiusmod eu sint ullamco" });
+    arr.push({ image: dummy1, name: `Nisi_${i}` });
+    arr.push({ image: dummy2, name: `eiusmod_${i}` });
 
   } else {
-    arr.push({ image: dummy2, name: "id et eiusmod eu sint ullamco" });
-    arr.push({ image: dummy1, name: "Nisi nostrud officia minim" });
+    arr.push({ image: dummy2, name: `eiusmod_${i}` });
+    arr.push({ image: dummy1, name: `Nisi_${i}` });
   }
 }
 
