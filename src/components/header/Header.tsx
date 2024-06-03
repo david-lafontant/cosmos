@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { LuMenuSquare } from "react-icons/lu";
 
 const Header = () => {
@@ -17,9 +18,9 @@ const Header = () => {
         </label>
         <label className="logo">COSMOS</label>
         <ul id="navlist">
-          <li><a className="active" href="#" onClick={handleClick}>Home</a></li>
-          <li><a href="#" onClick={handleClick}>About</a></li>
-          <li><a href="#" onClick={handleClick}>Contact</a></li>
+          <li><Link to="/" className="active" onClick={handleClick}>Home</Link></li>
+          <li><Link to="/about" onClick={handleClick}>About</Link></li>
+          <li><Link to="contact" onClick={handleClick}>Contact</Link></li>
         </ul>
       </nav>
     </header>
