@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 type CardData = {
   image: string;
   name: string;
@@ -14,7 +14,10 @@ const Card = ({ data }: Data) => {
       <img src={data.image} alt={data.name} className="cardImage" />
       <div className="container">
         <h4><b>{data.name}</b></h4>
-        <button>More Details ...</button>
+
+        <Link to={'astra/' + data.name}>
+          <button>More Details ...</button>
+        </Link>
       </div>
     </div>);
 }
