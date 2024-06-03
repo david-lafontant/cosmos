@@ -1,8 +1,17 @@
-@import './assets/stylesheets/Header.scss';
+@import './components/header/Header.scss';
 
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+}
+
+.pages {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
