@@ -1,8 +1,20 @@
+import arr from "../../utils/card";
+import Card from "../../components/card/Card";
+
 
 const Home = () => {
+
+
   return (
     <main className="pages">
-      <h2>Home page</h2>
+      <section>
+
+      </section>
+
+      <section className="cards">
+        {arr.map((elem, index) => <Card key={index} data={elem} />)}
+      </section>
+
     </main>
   );
 }
