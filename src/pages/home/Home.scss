@@ -1,0 +1,17 @@
+@media screen and (min-width: 769px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 50px;
+  }
+}
