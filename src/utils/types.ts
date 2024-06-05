@@ -9,3 +9,5 @@ export type Apod = {
   url: string
 }
 
+
+export type Apods = Apod[];
