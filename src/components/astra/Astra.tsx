@@ -1,32 +1,27 @@
-
-
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import arr from "../../utils/card";
-
-type CardData = {
-  image: string;
-  name: string;
-}
+import { useGetApodsQuery } from '../../services/apods';
+import { Apod } from "../../utils/types";
 
 const Astra = () => {
   const { slug } = useParams();
-  const [data, setData] = useState({} as CardData)
+  const { data } = (useGetApodsQuery(''));
+  const [astra, setAstra] = useState({} as Apod)
+
   useEffect(() => {
-    if (slug) {
-      console.log(slug)
-      const filtered = arr.filter((item) => item.name === slug);
-      console.log(filtered[0])
-      setData(data => ({ ...data, ...filtered[0] }))
+    if (data) {
+      const filtered = data.filter((item: Apod) => item.title === slug);
+      setAstra(astra => ({ ...astra, ...filtered[0] }))
     }
-  }, [slug]);
+  }, [data, slug]);
+
+
   return (
     <main className="astra">
-
       <figure>
-        <img src={data.image} alt={data.name} />
+        <img src={astra.hdurl} alt={astra.title} />
         <figcaption>
-          {data.name}
+          {astra.title}
         </figcaption>
       </figure>
 
