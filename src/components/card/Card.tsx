@@ -1,21 +1,18 @@
 import { Link } from "react-router-dom";
-type CardData = {
-  image: string;
-  name: string;
-}
+import { Apod } from '../../utils/types';
 
 type Data = {
-  data: CardData
+  data: Apod
 }
 
 const Card = ({ data }: Data) => {
   return (
     <div className="card">
-      <img src={data.image} alt={data.name} className="cardImage" />
+      <img src={data.hdurl} alt={data.title} className="cardImage" />
       <div className="container">
-        <h4><b>{data.name}</b></h4>
+        <h4><b>{data.title}</b></h4>
 
-        <Link to={'astra/' + data.name}>
+        <Link to={'astra/' + data.title}>
           <button>More Details ...</button>
         </Link>
       </div>
