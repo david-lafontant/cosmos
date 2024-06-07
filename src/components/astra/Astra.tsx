@@ -5,7 +5,7 @@ import { Apod } from "../../utils/types";
 
 const Astra = () => {
   const { slug } = useParams();
-  const { data } = (useGetApodsQuery(8));
+  const { data } = (useGetApodsQuery());
   const [astra, setAstra] = useState({} as Apod)
 
   useEffect(() => {
