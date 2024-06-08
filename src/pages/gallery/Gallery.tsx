@@ -14,8 +14,8 @@ const Gallery = () => {
     500: 1
   };
   return (
-    <main className="pages">
-      <h2> Gallery page</h2>
+    <main className="pages" id="gallery">
+      <h2> Gallery of Cosmos</h2>
       {apodsError ? (
         <h1>Oh no, there was an error</h1>
       ) : apodsIsLoading ? (
