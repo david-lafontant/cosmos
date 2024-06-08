@@ -3,6 +3,7 @@ import Masonry from 'react-masonry-css';
 import { useGetApodsQuery } from '../../services/apods';
 import Card from "../../components/card/Card";
 import { Apod } from '../../utils/types';
+import Loader from '../../components/loader/Loader';
 
 const Gallery = () => {
   const { data: apods, error: apodsError, isLoading: apodsIsLoading } = (useGetApodsQuery());
@@ -18,7 +19,10 @@ const Gallery = () => {
       {apodsError ? (
         <h1>Oh no, there was an error</h1>
       ) : apodsIsLoading ? (
+        <div>
         <h1>Loading...</h1>
+        <Loader />
+        </div>
       ) : apods ? (
         <Masonry
         breakpointCols={breakpointColumnsObj}
