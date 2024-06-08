@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Revista';
+    src: local('Revista Black'),
+        url('./Revista-Black/Revista-Black.woff2') format('woff2'),
+        url('./Revista-Black/Revista-Black.woff') format('woff'),
+        url('./Revista-Black/Revista-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Aromatica Regular';
+    src: local('Aromatica Regular'), local('Aromatica Regular'),
+        url('./aromatica-regular-maisfontes.dbac/aromatica-regular.ttf') format('truetype');
+
+    font-style: normal;
+  }
