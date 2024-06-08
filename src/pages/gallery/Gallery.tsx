@@ -20,8 +20,8 @@ const Gallery = () => {
         <h1>Oh no, there was an error</h1>
       ) : apodsIsLoading ? (
         <div>
-        <h1>Loading...</h1>
-        <Loader />
+          <h1>Loading...</h1>
+          <Loader />
         </div>
       ) : apods ? (
         <Masonry
