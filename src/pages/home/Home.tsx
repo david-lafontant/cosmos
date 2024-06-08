@@ -1,6 +1,7 @@
 
 import {  useGetTodayApodQuery } from '../../services/apods';
 import Hero from "../../components/hero/Hero";
+import Loader from '../../components/loader/Loader';
 
 
 const Home = () => {
@@ -15,7 +16,10 @@ const Home = () => {
       {error ? (
         <h1>Oh no, there was an error</h1>
       ) : isLoading ? (
-        <h1>Loading...</h1>
+        <div>
+          <Loader />
+          <h1>Loading...</h1>
+        </div>
       ) : data ? (
         <Hero data={data} />
       ) : null}
