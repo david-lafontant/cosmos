@@ -21,7 +21,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #424694;
   text-decoration: inherit;
 }
 
@@ -63,12 +63,16 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #010a13;
     background-color: #fff;
   }
 
+  .menu {
+    color: #010214;
+  }
+
   a:hover {
-    color: #747bff;
+    color: #010214;
   }
 
   button {
