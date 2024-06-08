@@ -8,12 +8,8 @@ const Home = () => {
   const { data, error, isLoading } = useGetTodayApodQuery();
 
   return (
-    <main className="pages">
-      <section className="banner">
-        <h1>Welcome to Cosmos</h1>
-      </section>
-
-      {error ? (
+    <main className="pages" id="home">
+          {error ? (
         <h1>Oh no, there was an error</h1>
       ) : isLoading ? (
         <div>
@@ -23,8 +19,6 @@ const Home = () => {
       ) : data ? (
         <Hero data={data} />
       ) : null}
-
-
     </main>
   );
 }
