@@ -17,7 +17,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="gallery" element={<Gallery />} />
-            <Route path="/astra/:slug" element={<Astra />} />
+            <Route path="astra/:slug" element={<Astra />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
