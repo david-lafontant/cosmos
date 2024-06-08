@@ -12,11 +12,12 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #242424; */
+  background: rgb(1, 1, 36);
+  background: -moz-linear-gradient(176deg, rgba(1, 1, 36, 1) 17%, rgba(232, 232, 241, 1) 48%, rgba(19, 19, 19, 1) 100%);
+  background: -webkit-linear-gradient(176deg, rgba(1, 1, 36, 1) 17%, rgba(232, 232, 241, 1) 48%, rgba(19, 19, 19, 1) 100%);
+  background: linear-gradient(176deg, rgba(1, 1, 36, 1) 17%, rgba(232, 232, 241, 1) 48%, rgba(19, 19, 19, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010124", endColorstr="#131313", GradientType=1);
 }
 
 a {
@@ -64,7 +65,12 @@ button:focus-visible {
 @media (prefers-color-scheme: light) {
   :root {
     color: #010a13;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background: rgb(225, 225, 236);
+    background: -moz-linear-gradient(176deg, rgba(225, 225, 236, 1) 17%, rgba(53, 53, 110, 1) 48%, rgba(230, 231, 238, 1) 100%);
+    background: -webkit-linear-gradient(176deg, rgba(225, 225, 236, 1) 17%, rgba(53, 53, 110, 1) 48%, rgba(230, 231, 238, 1) 100%);
+    background: linear-gradient(176deg, rgba(225, 225, 236, 1) 17%, rgba(53, 53, 110, 1) 48%, rgba(230, 231, 238, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e1ec", endColorstr="#e6e7ee", GradientType=1);
   }
 
   .menu {
