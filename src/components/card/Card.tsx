@@ -8,7 +8,7 @@ type Data = {
 const Card = ({ data }: Data) => {
   return (
         <div>
-         <Link to={'astra/' + data.title}>
+         <Link to={'/astra/' + data.title}>
             <img src={data.hdurl} alt={data.title} className="cardImage" />
           </Link>
       </div>
