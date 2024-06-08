@@ -23,7 +23,6 @@
 
   ul li {
     margin-right: 20px;
-
   }
 
   ul li a {
@@ -46,9 +45,7 @@
   #check {
     display: none;
   }
-
 }
-
 
 @media screen and (max-width: 768px) {
   #header {
@@ -82,7 +79,7 @@
       font-size: 20px;
     }
 
-    #check:checked~ul {
+    #check:checked ~ ul {
       right: 0;
     }
   }
