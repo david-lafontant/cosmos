@@ -19,8 +19,8 @@ const Header = () => {
         <label className="logo">COSMOS</label>
         <ul id="navlist">
           <li><Link to="/" className="active" onClick={handleClick}>Home</Link></li>
+          <li><Link to="/gallery" onClick={handleClick}>Gallery</Link></li>
           <li><Link to="/about" onClick={handleClick}>About</Link></li>
-          <li><Link to="contact" onClick={handleClick}>Contact</Link></li>
         </ul>
       </nav>
     </header>

@@ -5,7 +5,7 @@ import { Apod } from "../../utils/types";
 
 const Astra = () => {
   const { slug } = useParams();
-  const { data } = (useGetApodsQuery(8));
+  const { data } = (useGetApodsQuery());
   const [astra, setAstra] = useState({} as Apod)
 
   useEffect(() => {
@@ -17,14 +17,23 @@ const Astra = () => {
 
 
   return (
-    <main className="astra">
+    <main className="astra" >
+
       <figure>
         <img src={astra.hdurl} alt={astra.title} />
         <figcaption>
           {astra.title}
         </figcaption>
       </figure>
-
+      <section className="description">
+        <h2>{astra.title}</h2>
+        <p>
+          {astra.explanation}
+        </p>
+        <p>
+          {astra.date}
+        </p>
+      </section>
     </main>
   );
 }

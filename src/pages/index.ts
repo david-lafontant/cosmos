@@ -1,6 +1,6 @@
 import About from "./about/About";
-import Contact from "./contact/Contact";
+import Gallery from "./gallery/Gallery";
 import Home from "./home/Home";
 import NoPage from "./nopage/NoPage";
 
-export { About, Contact, Home, NoPage }
+export { About, Gallery, Home, NoPage }

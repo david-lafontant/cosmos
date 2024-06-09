@@ -1,5 +1,5 @@
 export type Apod = {
-  copyright: string
+  copyright: string | null
   date: string
   explanation: string
   hdurl: string
